@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA72AE86-75D2-498B-8299-41A353E2B87B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RepairIS_1</RootNamespace>
+    <AssemblyName>RepairIS_1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Downloads\P-8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Downloads\P-8.Designer.cs">
+      <DependentUpon>P-8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Downloads\RepairIS_1_7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Downloads\RepairIS_1_7.Designer.cs">
+      <DependentUpon>RepairIS_1_7.cs</DependentUpon>
+    </Compile>
+    <Compile Include=".cs" />
+    <Compile Include="frmAbout1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout1.Designer.cs">
+      <DependentUpon>frmAbout1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImport2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImport2.Designer.cs">
+      <DependentUpon>frmImport2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListWorkers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListWorkers.Designer.cs">
+      <DependentUpon>frmListWorkers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWorker.Designer.cs">
+      <DependentUpon>frmWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="..\..\..\Downloads\P-8.resx">
+      <DependentUpon>P-8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Downloads\RepairIS_1_7.resx">
+      <DependentUpon>RepairIS_1_7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout1.resx">
+      <DependentUpon>frmAbout1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImport2.resx">
+      <DependentUpon>frmImport2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListWorkers.resx">
+      <DependentUpon>frmListWorkers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorker.resx">
+      <DependentUpon>frmWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-eye-118191.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-eye-118191 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-businesswoman-3220315.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-boss-265674.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-partnership-2838141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %286%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %284%291.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
